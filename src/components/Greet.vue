@@ -1,4 +1,14 @@
 <template>
+  <el-input
+      v-model="name"
+      style="max-width: 600px"
+      placeholder="Please input"
+      class="input-with-select"
+    >
+      <template #append>
+        <el-button :icon="Search" />
+      </template>
+    </el-input>
   <el-form
     ref="ruleFormRef"
     style="max-width: 600px"
